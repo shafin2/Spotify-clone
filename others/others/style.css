@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+body{
+    background-color: bisque;
+}
+/* header */
+header{
+    background-color: black;
+    color: aliceblue;
+}
+ul{
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    padding: 0 1.5vw;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+ul li img{
+    height: 8vh;
+    padding: 0 .5vw;
+}
+/* main */
+main .container{
+    background:url("images\\bg.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+    width: 70vw;
+    margin:4vh auto;
+    border-radius: 20px;
+    color: white;
+}
+main .container .song-list{
+    height: 80vh;
+    padding: 8vh 6vw;
+}
+main .container .song-list h1{
+    margin-bottom: 10vh;
+}
+main .container .song-list .song-item{
+    width:30vw;
+    background-color:rgb(245, 245, 245);
+    color: black;
+    height: 7vh;
+    border-radius: 23px;
+    margin: 3vh 0;
+    display: flex;
+    padding: 0 2vw;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.song-img{
+    width:2.5vw;
+    height: auto;
+    /* object-fit: cover; */
+    border-radius: 50%;
+}
+.songItemPlay{
+    cursor: pointer;
+}
+/* footer */
+footer{
+    height: 20vh;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+}
+footer input{
+    width: 80vw;
+}
+footer .control-option{
+    margin: 2vh 0;
+}
+footer .song-info{
+    width: 30vw;
+    position: absolute;
+    left: 10vw;
+}
+#gif{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.handpointer{
+    cursor:pointer;
+}
+#masterSongName{
+
+}
+
+
+@media screen and (max-width: 780px) {
+    body {
+      background-color: lightgreen;
+    }
+    main .container{
+        background-color: black ;
+        background-image: none;
+    }
+    main .container .song-list .song-item{
+        width:50vw;  
+        margin: 3vh auto;
+    }
+    main .container .song-list h1{
+        text-align: center;
+    }
+    footer .song-info{
+
+        left: 5vw;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    body {
+      background-color: blanchedalmond;
+    }
+    main .container{
+        height: 150vh;
+    }
+    .song-img{
+        width:4vw;
+        height: auto;
+        /* object-fit: cover; */
+        border-radius: 50%;
+    }
+  }
