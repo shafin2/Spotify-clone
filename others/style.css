@@ -107,18 +107,23 @@ footer .song-info{
 
 }
 
-
 @media screen and (max-width: 780px) {
     body {
       background-color: lightgreen;
     }
-    .song-img{
-        width:4vw;
-        height: auto;
-        /* object-fit: cover; */
-        border-radius: 50%;
+    main .container{
+        background-color: black ;
+        background-image: none;
+    }
+    main .container .song-list .song-item{
+        width:50vw;  
+        margin: 3vh auto;
+    }
+    main .container .song-list h1{
+        text-align: center;
     }
     footer .song-info{
+
         left: 5vw;
     }
   }
@@ -128,6 +133,12 @@ footer .song-info{
       background-color: blanchedalmond;
     }
     main .container{
-        height: 140vh;
+        height: 150vh;
+    }
+    .song-img{
+        width:4vw;
+        height: auto;
+        /* object-fit: cover; */
+        border-radius: 50%;
     }
   }
